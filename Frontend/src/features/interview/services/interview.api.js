@@ -1,13 +1,13 @@
 import axios from "axios";
 
 const api = axios.create({
-    baseURL: "http://localhost:3000",
+    baseURL: "http://localhost:5000",
     withCredentials: true,
 })
 
 
 /**
- * @description Service to generate interview report based on user self description, resume and job description.
+ * @description Service to generate interview report based on user self description resume and job description.
  */
 export const generateInterviewReport = async ({ jobDescription, selfDescription, resumeFile }) => {
 

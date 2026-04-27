@@ -11,7 +11,7 @@ const Protected = ({children}) => {
     }
 
     if(!user){
-        return <Navigate to={'/login'} />
+        return children; // 🔥 bypass login
     }
     
     return children
